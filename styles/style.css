@@ -6,7 +6,12 @@
 }
 
 /* Header Started Here */
-
+header h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 50px;
+}
 .container {
   width: 1200px;
   max-width: 90%;
