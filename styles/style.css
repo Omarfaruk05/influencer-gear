@@ -7,65 +7,34 @@
 
 /* Header Started Here */
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 40px auto;
-}
 .container {
   width: 1200px;
   max-width: 90%;
   margin: 0 auto;
 }
-header .left-part {
-  color: rgba(58, 58, 58, 1);
-  font-size: 24px;
-  font-weight: 700;
-}
-header .right-part ul {
-  display: flex;
-}
-header .right-part ul > li {
-  list-style-type: none;
-  margin: 0 10px;
-}
-header .right-part ul > li > a {
-  text-decoration: none;
-  color: rgba(58, 58, 58, 1);
-  font-size: 16px;
-  font-weight: 600;
-}
 
-/* Main Section Started here  */
+/* Main Section Starts here  */
 
 .intro-area {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-}
-
-.intro-area .left-part h1 {
-  font-size: 52px;
-  font-weight: 700;
+  margin: 50px 0;
   color: rgba(58, 58, 58, 1);
 }
-.intro-area .left-part {
-  font-size: 16px;
-  font-weight: 600;
+.intro-area .left-part h1 {
+  font-size: 54px;
   color: rgba(58, 58, 58, 1);
 }
 .intro-area .left-part button {
+  margin-top: 30px;
+  padding: 14px 25px;
+  color: white;
   font-size: 16px;
   font-weight: 700;
-  margin-top: 30px;
-  padding: 10px 24px;
-  color: white;
   border: 1px solid rgba(224, 44, 109, 1);
-  border-radius: 41px;
   background-color: rgba(224, 44, 109, 1);
+  border-radius: 41px;
   transition: 0.3s;
 }
 .intro-area .left-part button:hover {
@@ -73,17 +42,19 @@ header .right-part ul > li > a {
   border: 1px solid rgba(224, 44, 109, 1);
   color: rgba(224, 44, 109, 1);
 }
-.intro-area .left-part button:hover.main-camera {
-  transform: scale(1.5);
-}
 .intro-area .right-part {
   position: relative;
-  margin-left: 80px;
+}
+.intro-area .right-part .circle {
 }
 .intro-area .right-part .main-camera {
   position: absolute;
-  top: 20px;
-  left: 30px;
+  top: 50px;
+  right: 50px;
+  transition: 2s;
+}
+.intro-area .right-part .main-camera:hover {
+  transform: rotate(360deg);
 }
 
 /* Sponsor-list Started here  */
@@ -168,8 +139,8 @@ header .right-part ul > li > a {
   background-color: transparent;
   border: none;
   position: relative;
-  top: 30px;
-  left: 460px;
+  top: 20px;
+  left: 440px;
 }
 
 /* My Section Started Here  */
@@ -209,6 +180,8 @@ header .right-part ul > li > a {
   text-decoration: underline;
   color: rgba(224, 44, 109, 1);
 }
+
+/* footer starts here  */
 footer {
   text-align: center;
   color: white;
@@ -245,33 +218,78 @@ footer .social-media i:hover {
  Responsiveness 
 ------------------ */
 
-@media only screen and (max-width: 688px) {
-  .header .container {
-    display: none;
-    visibility: hidden;
-  }
+/* for tablet  */
+
+@media screen and (max-width: 769px) {
   .intro-area {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    margin: 50px 0;
-    flex-direction: column;
+    overflow: hidden;
   }
-  .intro-area .right-part .circle,
-  .main-camera {
+  .intro-area .right-part {
+    margin-top: 20px;
+    width: 90%;
+    position: relative;
+  }
+  .intro-area .right-part .circle {
+    width: 100%;
+  }
+  .intro-area .right-part .main-camera {
     transform: scale(0.5);
+    position: absolute;
+    right: -100px;
+    top: -100px;
   }
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 30px;
+  }
+  .container .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
 
+/* for mobile  */
+@media screen and (max-width: 600px) {
+  .intro-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .intro-area .right-part {
+    margin-top: 20px;
+    width: 90%;
+    position: relative;
+  }
+  .intro-area .right-part .circle {
+    width: 98%;
+  }
+  .intro-area .right-part .main-camera {
+    transform: scale(0.8);
+    position: absolute;
+    right: -50px;
+    top: -50px;
+  }
   .product-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    align-items: center;
     gap: 30px;
   }
   .product-section button {
     position: relative;
-    left: 30px;
+    left: 20px;
   }
   .container .content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    align-items: center;
   }
 }
