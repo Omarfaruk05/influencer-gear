@@ -39,12 +39,10 @@ header .right-part ul > li > a {
 
 /* Main Section Started here  */
 
-.container {
-}
 .intro-area {
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 .intro-area .left-part {
   width: 50%;
@@ -86,4 +84,122 @@ header .right-part ul > li > a {
   position: absolute;
   top: 20px;
   left: 0px;
+}
+
+/* Sponsor-list Started here  */
+
+.sponsor-list {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Product-items Started  Here  */
+
+.product h2 {
+  margin: 150px 0 30px 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: rgba(58, 58, 58, 1);
+  text-align: center;
+}
+.product-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.product-item {
+  width: 300px;
+  height: 476px;
+  padding: 17px 14px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.product-item .product-photo {
+  width: 300px;
+  height: 256px;
+  margin: 0 auto;
+}
+.product-item .product-details {
+  margin-top: 10px;
+}
+.product-item .product-details h2 {
+  margin: 20px 0 20px 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: rgba(24, 25, 31, 1);
+}
+.product-item .product-details h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+}
+.product-details .ratting {
+  margin: 5px 0 15px 0;
+  align-items: center;
+}
+.product-details .ratting i {
+  color: #fb8200;
+}
+.product-details .ratting span {
+  position: relative;
+  top: 2px;
+  color: rgba(94, 99, 102, 1);
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.product-details small {
+  color: rgba(120, 120, 133, 1);
+  font-size: 14px;
+  font-weight: 700;
+}
+.product-section button {
+  color: rgba(224, 44, 109, 1);
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  top: 30px;
+  left: 460px;
+}
+footer {
+  margin-top: 150px;
+  text-align: center;
+  color: white;
+  background-color: #0a0826;
+  padding: 50px 0;
+}
+footer h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .social-media {
+  color: white;
+  margin-top: 20px;
+}
+footer .social-media i {
+  font-size: 25px;
+  margin: 10px;
+  padding: 15px;
+  color: white;
+  background-color: #15132e;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+footer .social-media i:hover {
+  color: rgba(224, 44, 109, 1);
+  transform: rotate(360deg);
 }
