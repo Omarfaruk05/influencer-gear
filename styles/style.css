@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@500;600;700&family=The+Nautigal:wght@700&family=Yeseva+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Started Here */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+}
+.container {
+  width: 1300px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+header .left-part {
+  color: rgba(58, 58, 58, 1);
+  font-size: 24px;
+  font-weight: 700;
+}
+header .right-part ul {
+  display: flex;
+}
+header .right-part ul > li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+header .right-part ul > li > a {
+  text-decoration: none;
+  color: rgba(58, 58, 58, 1);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Main Section Started here  */
+
+.container {
+}
+.intro-area {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.intro-area .left-part {
+  width: 50%;
+}
+.intro-area .left-part h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: rgba(58, 58, 58, 1);
+}
+.intro-area .left-part {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(58, 58, 58, 1);
+}
+.intro-area .left-part button {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 10px 24px;
+  color: white;
+  border: 1px solid rgba(224, 44, 109, 1);
+  border-radius: 41px;
+  background-color: rgba(224, 44, 109, 1);
+  transition: 0.3s;
+}
+.intro-area .left-part button:hover {
+  background-color: white;
+  border: 1px solid rgba(224, 44, 109, 1);
+  color: rgba(224, 44, 109, 1);
+}
+.intro-area .left-part button:hover.main-camera {
+  transform: scale(1.5);
+}
+.intro-area .right-part {
+  position: relative;
+  margin-left: 90px;
+}
+.intro-area .right-part .main-camera {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
